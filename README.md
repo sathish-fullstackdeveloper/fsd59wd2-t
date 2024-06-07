@@ -8,7 +8,7 @@ Rendering: inserting the HTML code into the DOM
 
 destructuring is a way to extract multiple values from an object or array. To assign multiple values from an object or array to multiple variables.
 
-- [ ] hooks in react: useState, useEffect
+- [x] hooks in react: useState, useEffect
 
 - class components: stateful components
 - functional components: stateless components
@@ -38,5 +38,5 @@ React uses VirtualDOM:
 
 - React creates a virtual DOM. When state changes in a component it firstly updates the virtual DOM. Then it compares the virtual DOM with a snapshot of the virtual DOM taken right before the update. Then it updates the real DOM with only the things that have actually changed. So, it updates only the things that have changed rather than updating the whole DOM / entire page.
 
-- [ ] cloning repo from github to local
+- [x] cloning repo from github to local
 - [ ] react router dom
