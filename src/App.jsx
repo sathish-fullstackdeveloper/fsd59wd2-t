@@ -1,18 +1,20 @@
 const App = () => {
 
-  const favourites = ['ReactJS', 'Node', 'MongoDB', 'Express', 'JavaScript'];
+   // destructuring the person object
+   const { name: personName, age, location } = {
+    name: 'John',
+    age: 25,
+    location: 'New York'
+   }
+  
+  console.log(personName, age, location);
 
   return (
-    <>
-      <h1>My Favourite List</h1>
-      <ul>
-        {
-          favourites.map((item, index) => {
-            return <li key={index}>{ item }</li>
-          })
-        }
-      </ul>
-    </>
+    <div>
+      <h1>{personName}</h1>
+      <p>Age: {age}</p>
+      <p>Location: {location}</p>
+    </div>
   )
 }
 
