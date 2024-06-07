@@ -1,14 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const App = () => {
 
   let [count, setCount] = useState(0);
 
+  // useEffect is a hook that allows you to perform side effects in function components
+
+  // useEffect runs when the component mounts and every time it updates
+  // useEffect(() => {
+  //   console.log(`Count: ${count}`);
+  // })
+
+  // useEffect runs when the component mounts
+  // useEffect(() => {
+  //   console.log(`Count: ${count}`);
+  // }, []);
+
+  // useEffect runs when the component mounts and when count updates
+  useEffect(() => {
+    console.log(`Count: ${count}`);
+  }, [count]);
+
   const handleIncrement = () => {
     setCount(count + 1);
   }
-
-  console.log('rendering component...');
 
   return (
     <div>
