@@ -34,5 +34,9 @@ Class Component Lifecycle Methods:
 
 - hooks starts with `use`
 
+React uses VirtualDOM:
+
+- React creates a virtual DOM. When state changes in a component it firstly updates the virtual DOM. Then it compares the virtual DOM with a snapshot of the virtual DOM taken right before the update. Then it updates the real DOM with only the things that have actually changed. So, it updates only the things that have changed rather than updating the whole DOM / entire page.
+
 - [ ] cloning repo from github to local
 - [ ] react router dom

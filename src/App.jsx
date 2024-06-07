@@ -1,19 +1,19 @@
+import { useState } from "react";
+
 const App = () => {
 
-   // destructuring the person object
-   const { name: personName, age, location } = {
-    name: 'John',
-    age: 25,
-    location: 'New York'
-   }
-  
-  console.log(personName, age, location);
+  let [count, setCount] = useState(0);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  }
+
+  console.log('rendering component...');
 
   return (
     <div>
-      <h1>{personName}</h1>
-      <p>Age: {age}</p>
-      <p>Location: {location}</p>
+      <h1>Counter: {count}</h1>
+      <button onClick={handleIncrement}>Increment</button>
     </div>
   )
 }
