@@ -40,3 +40,8 @@ React uses VirtualDOM:
 
 - [x] cloning repo from github to local
 - [x] react router dom
+
+Context of react router dom:
+
+- React is a Single Page Application (SPA) library.
+- By default, React doesn't reload the page when the URL changes
